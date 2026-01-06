@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hidden Sanctuary | Adoption Portal</title>
+    <style>
+        /* --- RESET & BASE STYLES --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* The "Deep Jungle" Gradient - No heavy images needed */
+            background: radial-gradient(circle at center, #1a2e1a 0%, #050a05 100%);
+            color: #e0e0e0;
+            font-family: 'Georgia', 'Times New Roman', serif; /* System fonts load instantly */
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* --- CONTAINER: THE "SCROLL/TABLET" --- */
+        .sanctuary-container {
+            max-width: 500px;
+            width: 100%;
+            border: 1px solid #4a5d4a;
+            padding: 40px 30px;
+            background: rgba(10, 20, 10, 0.8); /* Semi-transparent dark glass */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            position: relative;
+        }
+
+        /* Decorative Borders (CSS Only) */
+        .sanctuary-container::before, .sanctuary-container::after {
+            content: "✦";
+            color: #d4af37; /* Gold */
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .sanctuary-container::before { top: 10px; }
+        .sanctuary-container::after { bottom: 10px; }
+
+        /* --- TYPOGRAPHY --- */
+        h1 {
+            color: #f0f0f0;
+            font-size: 2.2rem;
+            font-weight: normal;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+        .subtitle {
+            color: #d4af37; /* Gold */
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #4a5d4a;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #b0c4b0; /* Soft mossy white */
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            color: #fff;
+            font-style: italic;
+        }
+
+        /* --- PERKS LIST --- */
+        .perks-list {
+            text-align: left;
+            margin: 30px 0;
+            border-top: 1px solid #2a3d2a;
+            border-bottom: 1px solid #2a3d2a;
+            padding: 20px 0;
+        }
+
+        .perk-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .icon {
+            color: #d4af37;
+            margin-right: 12px;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .perk-title {
+            color: #d4af37;
+            font-weight: bold;
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .perk-desc {
+            font-size: 0.9rem;
+            color: #a0b0a0;
+        }
+
+        /* --- FORM STYLES --- */
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-size: 0.8rem;
+            color: #8a9a8a;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #4a5d4a;
+            color: #d4af37;
+            font-family: 'Georgia', serif;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #d4af37;
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+        }
+
+        /* --- BUTTON --- */
+        .cta-button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            background: transparent;
+            border: 1px solid #d4af37;
+            color: #d4af37;
+            font-family: 'Georgia', serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: rgba(212, 175, 55, 0.1);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            text-shadow: 0 0 8px #d4af37;
+        }
+
+        .disclaimer {
+            font-size: 0.7rem;
+            color: #5a6a5a;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="sanctuary-container">
+        
+        <div class="subtitle">Est. 1426 • The Hidden Sanctuary</div>
+        
+        <h1>The Mist Has Cleared.</h1>
+        
+        <p>
+            For six centuries, our Order has protected the Clutch deep within the Emerald Canopy. We kept them secret to keep them safe.
+        </p>
+        <p>
+            But the ancient seals are breaking. The dragons require guardians. 
+            <span class="highlight">For the first time in history, the Sanctuary gates are opening to outsiders.</span>
+        </p>
+
+        <div class="perks-list">
+            <div class="perk-item">
+                <span class="icon">❖</span>
+                <div>
+                    <span class="perk-title">The Scrying Link</span>
+                    <span class="perk-desc">Receive bi-monthly visual transmissions documenting your dragon's growth.</span>
+                </div>
+            </div>
+            <div class="perk-item">
+                <span class="icon">⚔</span>
+                <div>
+                    <span class="perk-title">The Path of Mastery</span>
+                    <span class="perk-desc">You choose their training: Stealth, Speed, or Flame.</span>
+                </div>
+            </div>
+            <div class="perk-item">
+                <span class="icon">♨</span>
+                <div>
+                    <span class="perk-title">Sustenance Control</span>
+                    <span class="perk-desc">You control the diet. The strength of the scales depends on the feeder.</span>
+                </div>
+            </div>
+        </div>
+
+        <p style="font-size: 1.1rem; color: #fff;">The Clutch is hatching. Are you ready to take the Oath?</p>
+
+      <form name="adoption-interest" method="POST" netlify>
+            
+            <div class="form-group">
+                <label for="dragon-name">Dragon Name Idea (Optional)</label>
+                <input type="text" id="dragon-name" name="dragon_name" placeholder="e.g. Spark, Ember...">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Parent / Guardian Email (Required)</label>
+                <input type="email" id="email" name="email" placeholder="guardian@example.com" required>
+            </div>
+
+            <button type="submit" class="cta-button">Apply for Adoption</button>
+
+        </form>
+
+        <div class="disclaimer">
+            *Due to high demand from aspiring Guardians, entry to the Sanctuary is currently by invitation.<br>
+            We will notify you by owl (email) when a new clutch is ready for training.
+        </div>
+
+    </div>
+
+</body>
+</html>
