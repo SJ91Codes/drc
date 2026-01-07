@@ -3,19 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Received</title>
-    </head>
-<body style="background-color: #0a0a0a; color: #d4af37; text-align: center; padding-top: 50px; font-family: serif;">
-    
-    <h1>The Seals are Intact.</h1>
-    <p>We have received your oath.</p>
-    <br>
-    <p><strong>Status:</strong> The current clutch is fully allocated.</p>
-    <p>You have been placed on the <strong>High Priority Waitlist</strong> for the next hatching.</p>
-    
-    <p style="margin-top: 30px; font-size: 0.8em; opacity: 0.7;">An owl (or email) will find you when a spot opens.</p>
+    <title>Oath Accepted | The Draconic Order</title>
+    <style>
+        body {
+            background-color: #050505; /* Deep Obsidian */
+            color: #d4af37; /* Metallic Gold */
+            font-family: 'Georgia', 'Times New Roman', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
 
-    <a href="/" style="color: white; text-decoration: underline;">Return to Sanctuary</a>
+        .container {
+            max-width: 600px;
+            border: 1px solid #333;
+            padding: 40px;
+            border-radius: 8px;
+            background: radial-gradient(circle, #1a1a1a 0%, #050505 100%);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .status-badge {
+            background-color: #2a2a2a;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1px solid #d4af37;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #cccccc;
+            margin-bottom: 20px;
+        }
+
+        .promise {
+            color: #d4af37;
+            font-style: italic;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            padding: 15px 0;
+            margin: 30px 0;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #050505;
+            background-color: #d4af37;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="status-badge">Waitlist Confirmed</div>
+        
+        <h1>Oath Accepted</h1>
+        
+        <p>The active clutch is currently full. However, your name has been inscribed in the ledger.</p>
+
+        <div class="promise">
+            "As a reward for your patience, your first summoning (call) will be free of charge when a spot opens."
+        </div>
+
+        <p>Keep a watchful eye on your inbox. We will signal you when the hatching begins.</p>
+
+        <br>
+        <a href="https://www.tiktok.com/@TheHiddenSanctuary" class="btn">Return to the Sanctuary (TikTok)</a>
+    </div>
 
 </body>
 </html>
