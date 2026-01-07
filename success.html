@@ -64,16 +64,20 @@
             margin: 30px 0;
         }
 
-        .btn {
+       .btn {
+            display: inline-block; /* FIX: Prevents overlapping when text wraps */
             text-decoration: none;
             color: #050505;
             background-color: #d4af37;
-            padding: 12px 30px;
+            padding: 15px 20px;    /* Adjusted padding for mobile */
             border-radius: 4px;
             font-weight: bold;
             transition: opacity 0.3s;
             text-transform: uppercase;
             font-size: 0.9rem;
+            line-height: 1.4;      /* FIX: Adds space between lines if it wraps */
+            max-width: 90%;        /* FIX: Ensures it doesn't touch screen edges */
+            box-sizing: border-box; /* FIX: Keeps padding inside the width */
         }
 
         .btn:hover {
