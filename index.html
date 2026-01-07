@@ -250,22 +250,8 @@
 
     </div>
 
-<script>
-    const form = document.getElementById('application-form');
-    const button = form.querySelector('button');
 
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const originalText = button.innerText;
-        button.innerText = "Securing Egg...";
-        button.style.opacity = "0.7";
-        button.style.cursor = "wait";
-        
-        setTimeout(() => {
-            form.submit();
-        }, 2000); 
-    });
-</script>
 </body>
 </html>
+
 
